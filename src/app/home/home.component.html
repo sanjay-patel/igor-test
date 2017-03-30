@@ -1,0 +1,7 @@
+<div class="col-md-12">
+    <div [ngGrid]="gridConfig">
+    	<div *ngFor="let box of boxes; let i = index" [(ngGridItem)]="box.config">
+    		<div class="handle text-div"> <p> {{box.text}} </p> {{box.id}} </div>
+    	</div>
+    </div>
+</div>
